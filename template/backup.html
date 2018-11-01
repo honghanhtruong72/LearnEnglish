@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Main</title>
+<link rel="stylesheet" href="reset.css"/>
+	<style type="text/css">
+	/* START RESET */
+			html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+				margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;text-decoration:none;list-style-type:none;}
+	/* END RESET */
+	#header{
+		background-color: #ff9900;
+		text-align: right;
+		height: 25px;
+		font-size: 15px;
+	}
+	.logo {
+			background:#00b000; width:225px; border-radius: 0 0 15px 15px; box-shadow:0 2px 2px rgba(0,0,0,.35); margin:0 0 0 20px; text-align:center; position:absolute;display:block; z-index:4;
+			behavior: url(css/PIE.htc); /* well-tested solution for adding border-radius to IE 6-9 */
+			}
+	.logo img {position:relative; top:2px; left:px}
+	#content{
+		background-color: #b30077;
+		height: 700px;
+	}
+	#footer{
+		background-color: #ff9900;
+		height: 100px;
+	}
+	</style>
+</head>
+<body>
+	<div class="logo">
+			<img src="C:\Users\PC\Downloads\Picture\logo.jpg" width="220" height="60" alt="Starfall" />
+	</div>
+<!-- <div id="header">
+	 --><p style ><a href="">Help</a>&nbsp|&nbsp<a href="">Truong Hong Hanh</a>&nbsp</p></div>
+<!-- <div id="logo">
+	<img src="C:\Users\PC\Downloads\Picture\logo.jpg" alt="bee" width="220px" height="150px">
+	<img src="C:\Users\PC\Downloads\Picture\Capture.PNG" height="150px" width="1125px">
+	<img src="C:\Users\PC\Downloads\Picture\nav1.jpg" height="150px" width="1125px">
+	<img src="C:\Users\PC\Downloads\Picture\sestanek.jpg" height="150px" width="1125px">
+</div>	 -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div id="content">
+	<img src="D:\Download\1.jpg" alt="main screen" height="700px" width="1349px">
+	<img src="D:\Download\abc.PNG">
+</div>
+<div id="footer"></div>
+</body>
+</html>
